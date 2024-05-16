@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 class="title">Web Shop</h1>
+    <div class="cart-container">
+      <div class="wallet">Wallet balance: <span class="wallet-amount">75</span> €</div>
+      <button class="cart-button">Cart <span class="cart-badge">0</span></button>
+      <div class="sort-content">
+        <button class="sort-button">Sort By: <span class="selected-sort"> Default</span></button>
+        <div class="dropdown-menu">
+          <a href="#" data-sort="price-low-high">Price Low To High</a>
+          <a href="#" data-sort="price-high-low">Price High To Low</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="items-grid">
+    </div>
+
+    <div class="modal">
+      <div class="modal-content">
+        <div class="thank-you-message" style="display: none;">
+          <h2>Thank you for your purchase! Come back again.</h2>
+          <button class="close-btn">Close</button>
+        </div>
+        <div class="modal-normal">
+          <span class="close">&times;</span>
+          <h2>Cart</h2>
+          <ul class="cart-items"></ul>
+          <p><span class="info-label" style="display: none">Your cart is empty!</span></p>
+          <p>Total: <span class="cart-total">0.00 €</span></p>
+          <button class="buy-btn">Buy</button>
+        </div>
+      </div>
+    </div>
+    <script src="webshopItems.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
